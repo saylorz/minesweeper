@@ -12,7 +12,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ((TextView)findViewById(R.id.textView)).setText("Fuck");
+        ((TextView)findViewById(R.id.textView)).setText("Test");
 
         Log.e("MainActivity","onCreate");
         GameEngine.getInstance().createGrid(this);
