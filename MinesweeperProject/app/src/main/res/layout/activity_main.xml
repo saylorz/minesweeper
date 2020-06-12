@@ -18,5 +18,5 @@
         android:id="@+id/mineswweperGridView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"></com.example.minesweeperproject.views.grid.Grid>
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>

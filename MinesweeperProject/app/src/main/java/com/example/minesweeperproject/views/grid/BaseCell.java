@@ -63,6 +63,8 @@ public abstract class BaseCell extends View {
     public void setClicked() {
         this.isClicked = true;
         this.isRevealed = true;
+
+        invalidate();
     }
 
     public boolean isFlagged() {
@@ -85,12 +87,13 @@ public abstract class BaseCell extends View {
         return position;
     }
 
-    public void setPosition(int position) {
-        this.position = position;
+    public void setPosition(int x, int y){
+        this.x = x;
+        this.y = y;
 
-        x = position % GameEngine.WIDTH;
-        y = position / GameEngine.HEIGHT;
+        this.position = y * GameEngine.WIDTH + x;
 
         invalidate();
     }
+
 }
