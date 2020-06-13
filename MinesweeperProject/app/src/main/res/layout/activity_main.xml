@@ -19,4 +19,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_marginTop="600dp"
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:onClick="resetGame"
+        android:text="Restart"
+        android:textSize="35dp" />
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.minesweeperproject;
 
+import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
 import android.view.View;
@@ -15,7 +16,7 @@ public class GameEngine {
 
     public static final int numBombs = 10; //number of bombs to generate
     public static final int WIDTH = 10; //width of play board
-    public static final int HEIGHT = 16; //height of play board
+    public static final int HEIGHT = 12; //height of play board
 
     private Context context;
 
@@ -103,7 +104,8 @@ public class GameEngine {
         }
 
         if (bombNotFound == 0 && notRevealed == 0) {
-            Toast.makeText(context, "You Win!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "You Win!", Toast.LENGTH_SHORT).show();;
+            getInstance().createGrid(context);
         }
         return false;
     }
@@ -126,5 +128,7 @@ public class GameEngine {
                 getCellAt(x,y).setRevealed();
             }
         }
+
+        getInstance().createGrid(context);
     }
 }
