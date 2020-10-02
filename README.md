@@ -31,4 +31,4 @@ Current version 0.5
 - **Zac Saylor** - *Main contributor* - [saylorz](https://github.com/saylorz)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/saylorz/minesweeper/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/saylorz/DungeonRaider/blob/master/LICENSE) file for details
